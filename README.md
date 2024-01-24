@@ -1,12 +1,12 @@
 ## First option (java based)
-To deploying java based application run:
+To deploy java based application run:
 ```
 ansible-playbook java_based_app_deploy.yml
 ```
 and enter the jar file path.
 
 ## Second option (Docker based)
-To deploying Docker based application run:
+To deploy Docker based application run:
 ```
 ansible-playbook docker_based_app_deploy.yml --ask-vault-pass
 ```
