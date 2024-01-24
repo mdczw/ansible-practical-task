@@ -1,0 +1,8 @@
+[javaBased]
+app1 ansible_host=35.239.43.185
+
+[dockerBased]
+app2 ansible_host=104.197.93.20
+
+[local]
+control ansible_connection=local

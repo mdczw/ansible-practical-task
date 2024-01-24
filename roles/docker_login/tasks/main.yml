@@ -1,4 +1,7 @@
 ---
+  - name: Include vars
+    include_vars: '{{ vars_file }}'
+
   - name: Docker login
     docker_login:
       username: '{{ docker_username }}'

@@ -6,7 +6,6 @@
 
     roles:
       - install_docker
-      - role: docker_login
-        when: private_docker_repo == true
+      - { role: docker_login, "vars_file": "vars/docker_login.yml", when: private_docker_repo == true  }
       - pull_docker_image
       - run_docker_container

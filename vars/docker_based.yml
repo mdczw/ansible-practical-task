@@ -1,4 +1,4 @@
 #docker-based
 image_name: mdczw/ansible-spring-petclinic
 app_name: spring-petclinic
-private_docker_repo: true
+private_docker_repo: false
