@@ -1,0 +1,11 @@
+---
+
+  - name: Creates directory
+    ansible.builtin.file:
+      path: '/opt/{{ app_name }}/'
+      state: directory
+
+  - name: Copy JAR file from local machine to app server
+    ansible.builtin.copy: 
+      src: '{{ local_jar_path }}'
+      dest: '/opt/{{ app_name }}/{{ jar_file_name }}'

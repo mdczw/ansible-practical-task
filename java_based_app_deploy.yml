@@ -1,0 +1,14 @@
+---
+  - hosts: javaBased
+    become: true
+    vars_files: 
+      - ./vars/java_based.yml
+    vars_prompt:
+      - name: local_jar_path
+        prompt: Path to local jar file
+        private: false
+
+    roles:
+      - install_java
+      - pull_local_jar
+      - deploy_java_based_app

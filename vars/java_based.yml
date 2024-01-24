@@ -1,0 +1,3 @@
+#java-based
+app_name: ansible-spring-petclinic
+jar_file_name: '{{ local_jar_path | basename }}'
