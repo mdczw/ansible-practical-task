@@ -1,0 +1,12 @@
+---
+  - hosts: dockerBased
+    become: true
+    vars_files: 
+      - ./vars/docker_based.yml
+
+    roles:
+      - install_docker
+      - role: docker_login
+        when: private_docker_repo == true
+      - pull_docker_image
+      - run_docker_container

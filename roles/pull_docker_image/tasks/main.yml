@@ -1,0 +1,5 @@
+---
+  - name: Pull Docker image
+    docker_image:
+      name: '{{ image_name }}'
+      source: pull

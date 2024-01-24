@@ -1,0 +1,10 @@
+---
+  - name: Run Docker container
+    docker_container:
+      name: '{{ app_name }}'
+      image: '{{ image_name }}'
+      state: started
+      ports:
+      - '{{ ports }}'
+
+    
