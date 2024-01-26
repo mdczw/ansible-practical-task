@@ -1,4 +1,4 @@
 ---
   - name: Deploy Spring Petclinic
-    shell:
+    ansible.builtin.shell:
       cmd: bash -ilc 'nohup java -jar /opt/{{ app_name }}/{{ jar_file_name }} &'
